@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headphones Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f6fa;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 24px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px 40px 20px;
+            background: linear-gradient(120deg, #222 60%, #ff6f61 100%);
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            max-width: 500px;
+            text-align: center;
+        }
+        .hero button {
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 14px 36px;
+            font-size: 1rem;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .hero button:hover {
+            background: #e55a4e;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            margin: 48px 0;
+            padding: 0 20px;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 32px 24px;
+            max-width: 320px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .feature:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        }
+        .feature h3 {
+            margin-bottom: 12px;
+            color: #ff6f61;
+        }
+        .feature p {
+            font-size: 1rem;
+            color: #444;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 40px;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 800px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Headphones Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Experience Sound Like Never Before</h1>
+        <p>Discover the latest headphones with superior sound quality, comfort, and style. Find your perfect pair today!</p>
+        <button onclick="window.location.href='products.html'">Shop Now</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Premium Quality</h3>
+            <p>Only the best materials and technology for unmatched audio performance.</p>
+        </div>
+        <div class="feature">
+            <h3>Comfort Fit</h3>
+            <p>Ergonomic designs for all-day listening without discomfort.</p>
+        </div>
+        <div class="feature">
+            <h3>Fast Shipping</h3>
+            <p>Get your headphones delivered quickly and securely to your doorstep.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Headphones Store. All rights reserved.
+    </footer>
+</body>
+</html>

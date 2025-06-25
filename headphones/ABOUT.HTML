@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Headphones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        }
+        h1 {
+            color: #2d2d2d;
+            margin-bottom: 16px;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #4a4a4a;
+            margin-top: 32px;
+            font-size: 1.5rem;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+        .team {
+            display: flex;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .member {
+            background: #f0f0f0;
+            border-radius: 8px;
+            padding: 16px;
+            flex: 1 1 180px;
+            min-width: 180px;
+            text-align: center;
+        }
+        .member img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+            background: #e0e0e0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 6px;
+            }
+            .team {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Headphones</h1>
+        <p>
+            Welcome to Headphones! We are passionate about delivering the best audio experience to music lovers and audiophiles around the world. Our mission is to provide high-quality headphones that combine cutting-edge technology, comfort, and style.
+        </p>
+        <h2>Our Story</h2>
+        <p>
+            Founded in 2020, Headphones started as a small team of audio enthusiasts who wanted to make premium sound accessible to everyone. Today, we continue to innovate and expand our product line, always putting our customers first.
+        </p>
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
+                <div><strong>Alex Johnson</strong></div>
+                <div>Founder & CEO</div>
+            </div>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member">
+                <div><strong>Maria Lee</strong></div>
+                <div>Lead Engineer</div>
+            </div>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member">
+                <div><strong>Chris Smith</strong></div>
+                <div>Marketing Manager</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

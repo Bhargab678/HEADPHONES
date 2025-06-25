@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Headphones Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0 0 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        .product-card {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            width: 260px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            padding: 16px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .product-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 12px;
+            border-radius: 50%;
+            background: #eee;
+        }
+        .product-title {
+            font-size: 1.1em;
+            margin: 10px 0 6px 0;
+            font-weight: bold;
+        }
+        .product-price {
+            color: #388e3c;
+            font-size: 1.05em;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #1565c0;
+        }
+        @media (max-width: 800px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Headphones Collection</h1>
+    </header>
+    <div class="container">
+        <div class="products">
+            <div class="product-card">
+                <img src="OIP (2).jpg" alt="Headphone 1">
+                <div class="product-title">Wireless Over-Ear</div>
+                <div class="product-price">$99.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="OIP.jpg" alt="Headphone 2">
+                <div class="product-title">Noise Cancelling</div>
+                <div class="product-price">$149.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="kvw3BNLwnjT9VQAzsFUL9j.jpeg" alt="Headphone 3">
+                <div class="product-title">Sport Earbuds</div>
+                <div class="product-price">$59.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product-card">
+                <img src="OIP (1).jpg" alt="Headphone 4">
+                <div class="product-title">Studio Monitor</div>
+                <div class="product-price">$129.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

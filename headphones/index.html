@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#HOME.HTML">Home</a></li>
+                <li><a href="#PRODUCTS.HTML">Products</a></li>
+                <li><a href="#ABOUT.HTML">About</a></li>
+                <li><a href="#CONTACT.HTML">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="img">
+        <img src="1.png" alt="">
+        <img src="2.png" alt="">
+        <img src="3.png" alt="">
+        <img src="4.png" alt="">
+    </div>
+    <script>
+        document.querySelector('.navbar a[href="#HOME.HTML"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'HOME.HTML';
+        });
+        document.querySelector('.navbar a[href="#PRODUCTS.HTML"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'PRODUCTS.HTML';
+        });
+         document.querySelector('.navbar a[href="#ABOUT.HTML"]').addEventListener('click',function(event){
+            event.preventDefault();
+            window.location.href='ABOUT.HTML';
+         })
+         document.querySelector('.navbar a[href="#CONTACT.HTML"]').addEventListner('click',function(event){
+            event.preventDefault();
+            window.location.href='CONTACT.HTML';
+         })
+         </script>
+</body>
+</html>
